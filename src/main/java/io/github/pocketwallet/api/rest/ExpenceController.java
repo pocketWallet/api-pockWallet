@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 import io.github.pocketwallet.api.model.Expence;
 import io.github.pocketwallet.api.repository.ExpenceRepository;
 
-@RestController
+//@RestController
 public class ExpenceController {
 	
 	@Autowired
 	private ExpenceRepository expenceRepository;
 	
-	@GetMapping(value = "/expence/{id}")
+	/*	@GetMapping(value = "/expence/{id}")
 	public Optional<Expence> expence(@PathVariable(value="id") String id) {
 		return expenceRepository.findById(id);
 	}
@@ -29,7 +29,7 @@ public class ExpenceController {
 		return expenceRepository.save(expence);
 	}
 	
-	/*	@GetMapping(value = "/expences")
+	@GetMapping(value = "/expences")
 	public List<Expence> expences() {
 		return expenceRepository.findAll();
 	}
