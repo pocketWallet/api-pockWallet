@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
-
 import io.github.pocketwallet.api.model.Expence;
 import io.github.pocketwallet.api.repository.ExpenceRepository;
 
@@ -19,7 +17,7 @@ public class ExpenceController {
 	@Autowired
 	private ExpenceRepository expenceRepository;
 	
-	/*	@GetMapping(value = "/expence/{id}")
+	@GetMapping(value = "/expence/{id}")
 	public Optional<Expence> expence(@PathVariable(value="id") String id) {
 		return expenceRepository.findById(id);
 	}
@@ -33,5 +31,5 @@ public class ExpenceController {
 	public List<Expence> expences() {
 		return expenceRepository.findAll();
 	}
-*/
+
 }

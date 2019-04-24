@@ -7,7 +7,7 @@ import io.github.pocketwallet.api.model.Expence;
 import io.swagger.annotations.Api;
 
 @Api
-@RepositoryRestResource(path = "expences")
+@RepositoryRestResource//(path = "expences")
 public interface ExpenceRepository  extends MongoRepository<Expence, String>{
 
 }
